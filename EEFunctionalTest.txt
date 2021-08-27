@@ -1,0 +1,34 @@
+Test Plan
+In order to cover as much ground as possible while reducing the number of tests to run, I've created scenarios. 
+
+Test scenarios
+1. Special characters, foreign languages
+Fname: !@5_ X
+Sname: ข ไข่
+Price: 10
+Deposit: true
+Checkin: 2019-09-02
+Checkout: 2022-12-14
+
+2. price and date validation
+Fname: test
+Sname: two
+Price: 
+Deposit: false
+Checkin: 20/08/2021
+Checkout: 19/08/2021
+
+3. Happy day scenario
+Fname: valid
+Sname: test
+Price: 10
+Deposit: true
+Checkin: 29/08/2022
+Checkout: 30/08/2022
+
+4. Empty data (negative test)
+
+Tests: 
+1. Save scenarios 1,2,3,4 (tests that all scenarios with weird data can be added, and to test validation)
+2. Delete scenarios 1,2,3 (tests that saved scenarios with diverse data can be deleted)
+3. Save scenario 3 (positive test, to check that it can be saved)
