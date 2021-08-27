@@ -1,12 +1,11 @@
-﻿using NUnit.Framework;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
 
 namespace EEDemo.Helpers.Scenarios
 {
     
-    [TestFixture]
+    
     public class Scenario1
     {
         private string _fnameElement = "input#firstname";
@@ -17,7 +16,7 @@ namespace EEDemo.Helpers.Scenarios
         private string _checkout = "input#checkout";
         private string _save = "input[value=' Save ']";
 
-        [Test]
+       
         public void RunScenario1()
         {
             IWebDriver driver = new ChromeDriver();
@@ -42,7 +41,7 @@ namespace EEDemo.Helpers.Scenarios
         private string _checkout = "input#checkout";
         private string _save = "input[value=' Save ']";
 
-        [Test]
+        
         public void RunScenario2()
         {
             IWebDriver driver = new ChromeDriver();
@@ -68,7 +67,7 @@ namespace EEDemo.Helpers.Scenarios
         private string _checkout = "input#checkout";
         private string _save = "input[value=' Save ']";
 
-        [Test]
+        
         public void RunScenario3()
         {
             IWebDriver driver = new ChromeDriver();
