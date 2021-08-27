@@ -40,8 +40,9 @@ namespace EEDemo.Helpers.Scenarios
         private string _checkin = "input#checkin";
         private string _checkout = "input#checkout";
         private string _save = "input[value=' Save ']";
+        private string _home = "h1";
 
-        
+
         public void RunScenario2()
         {
             IWebDriver driver = new ChromeDriver();
@@ -50,7 +51,9 @@ namespace EEDemo.Helpers.Scenarios
             driver.FindElement(By.CssSelector(_lnameElement)).SendKeys("two");
             driver.FindElement(By.CssSelector(_deposit)).SendKeys("f");
             driver.FindElement(By.CssSelector(_checkin)).SendKeys("20/08/2021");
+            driver.FindElement(By.CssSelector(_home)).Click();
             driver.FindElement(By.CssSelector(_checkout)).SendKeys("19/08/2021");
+            driver.FindElement(By.CssSelector(_home)).Click();
             driver.FindElement(By.CssSelector(_save)).Click();
             driver.Dispose();
         }
@@ -66,8 +69,10 @@ namespace EEDemo.Helpers.Scenarios
         private string _checkin = "input#checkin";
         private string _checkout = "input#checkout";
         private string _save = "input[value=' Save ']";
+        private string _home = "h1";
 
-        
+
+
         public void RunScenario3()
         {
             IWebDriver driver = new ChromeDriver();
@@ -77,7 +82,9 @@ namespace EEDemo.Helpers.Scenarios
             driver.FindElement(By.CssSelector(_price)).SendKeys("10");
             driver.FindElement(By.CssSelector(_deposit)).SendKeys("t");
             driver.FindElement(By.CssSelector(_checkin)).SendKeys("29/08/2022");
+            driver.FindElement(By.CssSelector(_home)).Click();
             driver.FindElement(By.CssSelector(_checkout)).SendKeys("30/08/2022");
+            driver.FindElement(By.CssSelector(_home)).Click();
             driver.FindElement(By.CssSelector(_save)).Click();
             driver.Dispose();
         }
